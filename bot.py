@@ -5,7 +5,7 @@ from langdetect import DetectorFactory
 DetectorFactory.seed = 0
 import langdetect as ld
 from ENTH import en2th_text, enth_main
-client = commands.Bot(command_prefix='-') #กำหนด Prefix
+client = commands.Bot(command_prefix='-') 
 
 @client.event
 async def on_ready() : #เมื่อระบบพร้อมใช้งาน
@@ -25,5 +25,5 @@ async def on_message(message) : #ดักรอข้อความใน Chat
     else:
          pass
 
-TOKEN = 'NzgxMzg0NjMwNTE5NTk1MDY4.X783JQ.47UiovzVixVdvMT3VHG48k5ofno'
+TOKEN = 'token ใน discord' #ไม่สามารถใส่ token ใน github นี้ได้ เนื่องจาก policy ของ discord
 client.run(TOKEN) #รันบอท (โดยนำ TOKEN จากบอทที่เราสร้างไว้นำมาวาง)
